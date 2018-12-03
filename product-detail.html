@@ -497,7 +497,7 @@
 
 							<div class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
 								<!-- Button -->
-								<button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
+								<button id="addToCart_MUG01" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
 									Add to Cart
 								</button>
 							</div>
@@ -584,7 +584,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+										<button id="addToCart_BAG01" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -617,7 +617,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+										<button id="addToCart_JACK01" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -650,7 +650,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+										<button id="addToCart_COACH01" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -683,7 +683,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+										<button id="addToCart_SHORTS01" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -720,7 +720,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+										<button id="addToCart_BAG01" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -753,7 +753,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+										<button id="addToCart_JACK01" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -786,7 +786,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+										<button id="addToCart_COACH01" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -819,7 +819,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+										<button id="addToCart_SHORTS01" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -980,7 +980,7 @@
 
 					<div class="w-size2 p-t-20">
 						<!-- Button -->
-						<button class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
+						<button id="subscribe" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
 							Subscribe
 						</button>
 					</div>
@@ -1081,6 +1081,51 @@
 
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
+<!--===============================================================================================-->
+	<script type="text/javascript">
+		$( '#addToCart_MUG01' ).click(function() {
+			fbq('track', 'AddToCart', {
+				value: 22,
+				currency: 'USD',
+				content_ids: 'MUG-01',
+				content_type: 'product',
+			});
+		});
+		$( '#addToCart_BAG01' ).click(function() {
+			fbq('track', 'AddToCart', {
+				value: 75,
+				currency: 'USD',
+				content_ids: 'BAG-01',
+				content_type: 'product',
+			});
+		});
+		$( '#addToCart_JACK01' ).click(function() {
+			fbq('track', 'AddToCart', {
+				value: 92.50,
+				currency: 'USD',
+				content_ids: 'JACK-01',
+				content_type: 'product',
+			});
+		});
+		$( '#addToCart_COACH01' ).click(function() {
+			fbq('track', 'AddToCart', {
+				value: 165.90,
+				currency: 'USD',
+				content_ids: 'COACH-01',
+				content_type: 'product',
+			});
+		});
+		$( '#addToCart_SHORTS01' ).click(function() {
+			fbq('track', 'AddToCart', {
+				value: 15.90,
+				currency: 'USD',
+				content_ids: 'SHORTS-01',
+				content_type: 'product',
+			});
+		});
+		$( '#subscribe' ).click(function() {
+			fbq('track', 'Subscribe');
+		});
+	</script>
 </body>
 </html>
