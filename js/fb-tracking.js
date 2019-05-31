@@ -22,8 +22,8 @@
 			});
 		});
 
-		$( '#subscribe' ).click(function() {
+		/*$( '#subscribe' ).click(function() {
 			fbq('track', 'Subscribe');
-		});
+		});*/
 
 })(jQuery);
