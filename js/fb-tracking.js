@@ -16,8 +16,10 @@
 					value: productPrice,
 					currency: 'USD',
 					content_ids: productId,
-					content_type: 'product',
-				});
+					content_type: 'product'
+				},{
+          eventID: 'SARASA000'
+        });
 				//swal(productName, "is added to cart !", "success");
 			});
 		});
